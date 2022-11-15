@@ -1,5 +1,10 @@
+import { Header } from "../../components/Header/Header";
 import { HomeContainer } from "./styles";
 
 export const Home = (): JSX.Element => {
-  return <HomeContainer></HomeContainer>;
+  return (
+    <HomeContainer>
+      <Header />
+    </HomeContainer>
+  );
 };
