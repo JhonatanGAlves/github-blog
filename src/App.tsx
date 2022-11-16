@@ -1,4 +1,5 @@
 import { ThemeProvider } from "styled-components";
+import { GitHubProvider } from "./contexts/GitHubContext";
 import { Home } from "./pages/Home/Home";
 import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
@@ -8,7 +9,9 @@ export const App = () => {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
 
-      <Home />
+      <GitHubProvider>
+        <Home />
+      </GitHubProvider>
     </ThemeProvider>
   );
 };
