@@ -1,6 +1,6 @@
 export const defaultTheme = {
   blue: "#3294F8",
-  green: "#4FFF50",
+  green: "#278C00",
 
   background: "#071422",
   "bg-issue-card": "#112131",
