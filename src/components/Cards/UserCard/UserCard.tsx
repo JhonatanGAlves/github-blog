@@ -19,7 +19,7 @@ export const UserCard = (): JSX.Element => {
       <UserCardContent>
         <UserCardHeader>
           <h3>{user.name}</h3>
-          <LinkToProfile href={user.html_url}>
+          <LinkToProfile href={user.html_url} target="_blank">
             <span>github</span>
             <ArrowSquareOut />
           </LinkToProfile>
@@ -28,7 +28,7 @@ export const UserCard = (): JSX.Element => {
         <UserCardFooter>
           <InfoContainer>
             <GithubLogo />
-            <a href={user.avatar_url}>
+            <a href={user.html_url} target="_blank">
               <label>{user.login}</label>
             </a>
           </InfoContainer>
