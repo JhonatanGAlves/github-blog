@@ -18,6 +18,7 @@ export const ListIssues = (): JSX.Element => {
               title={i.title}
               created_at={i.created_at}
               body={i.body}
+              state={i.state}
             />
           );
         })}

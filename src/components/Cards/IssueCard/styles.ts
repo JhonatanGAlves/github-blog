@@ -20,6 +20,7 @@ export const IssueCardContainer = styled.div`
 export const IssueCardHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  gap: 16px;
 
   h3 {
     font-size: 1.25rem;
@@ -34,4 +35,31 @@ export const IssueCardHeader = styled.div`
 
     color: ${({ theme }) => theme.span};
   }
+`;
+
+export const Status = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+
+  span {
+    text-align: right;
+  }
+`;
+
+export const Badge = styled.div<{ isOpen: boolean }>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.375rem;
+  padding: 0.25rem 0.5rem;
+
+  border-radius: 4px;
+
+  text-transform: capitalize;
+
+  color: ${({ theme }) => theme.title};
+  background-color: ${({ isOpen, theme }) =>
+    isOpen ? theme.green : theme.blue};
 `;
