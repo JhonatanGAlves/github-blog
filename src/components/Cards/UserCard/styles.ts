@@ -9,6 +9,7 @@ export const UserCardContainer = styled.div`
   border-radius: 10px;
 
   background-color: ${({ theme }) => theme["bg-profile-card"]};
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
 
   img {
     width: 9.25rem;
@@ -30,6 +31,10 @@ export const UserCardContent = styled.div`
 export const UserCardHeader = styled.div`
   display: flex;
   justify-content: space-between;
+
+  h3 {
+    font-size: 1.5rem;
+  }
 `;
 
 export const LinkToProfile = styled.a`
@@ -43,6 +48,12 @@ export const LinkToProfile = styled.a`
   font-weight: 700;
 
   color: ${({ theme }) => theme.blue};
+
+  transition: filter 0.2ms;
+
+  :hover {
+    filter: brightness(0.8);
+  }
 `;
 
 export const UserCardFooter = styled.div`
