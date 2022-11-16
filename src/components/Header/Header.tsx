@@ -8,7 +8,7 @@ export const Header = (): JSX.Element => {
   return (
     <HeaderContainer>
       <img src={imgLeftEffect} />
-      <img src={logo} alt="Logo image" />
+      <img src={logo} alt="Logo image" style={{ marginTop: -78 }} />
       <img src={imgRightEffect} />
     </HeaderContainer>
   );
