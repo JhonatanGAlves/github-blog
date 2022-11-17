@@ -18,7 +18,9 @@ export const ListIssues = (): JSX.Element => {
             if (val.title === "") {
               return val;
             } else if (
-              val.title.toLowerCase().includes(searchTerm.toLowerCase())
+              val.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              val.body.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              val.state.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
               return val;
             }

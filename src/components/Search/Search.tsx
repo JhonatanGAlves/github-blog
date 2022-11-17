@@ -16,7 +16,7 @@ export const Search = ({ setSearchTerm }: SearchProps): JSX.Element => {
         <span>{`${issues.length} issue${issues.length === 1 ? "" : "s"}`}</span>
       </SearchHeader>
       <input
-        type="text"
+        type="search"
         id="search-input"
         placeholder="Search issues"
         onChange={(e) => setSearchTerm(e.target.value)}
